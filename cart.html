@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <div class="logo"><a href="index.html"><b>Tech Genesis</b></a></div>
+                </div>
+                <div class="nav-search">
+                    <input class="search-input" type="text" placeholder="Search here..." />
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-signin">
+                    <a href="login.html"><span>Sign in</span></a>
+                </div>
+                <div class="nav-return">
+                    <a href=""><span>My Orders</span></a>
+                </div>
+                <div class="nav-cart">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <a href="cart.html">Cart</a>
+                </div>
+                <div class="nav-profile">
+                    <div><i class="fa-regular fa-user"></i></div>
+                    <a href="">Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="cart">
+            <div class="cart-header">
+                <h1>Shopping Cart</h1>
+            </div>
+            
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="/Assets/item1.png" alt="Item 1">
+                    <div class="cart-item-info">
+                        <span>Item details</span><br>
+                        <span>Lorem ipsum dolor sit amet consectetur.</span><br>
+                        <span>Lorem ipsum dolor sit.</span>
+                    </div>
+                    <div class="item-details">
+                        <h2>Item 1</h2>
+                        <p>Price: <span class="cart-item-price"> Rs 999.00</span>*</p>
+                        <p>Quantity: 2</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="/Assets/item2.png" alt="Item 2">
+                    <div class="cart-item-info">
+                        <span>Item details</span><br>
+                        <span>Lorem ipsum dolor sit amet consectetur.</span><br>
+                        <span>Lorem ipsum dolor sit.</span>
+                    </div>
+                    <div class="item-details">
+                        <h2>Item 2</h2>
+                        <p>Price: <span class="cart-item-price"> Rs 499.00</span>*</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="/Assets/item3.png" alt="Item 2">
+                    <div class="cart-item-info">
+                        <span>Item details</span><br>
+                        <span>Lorem ipsum dolor sit amet consectetur.</span><br>
+                        <span>Lorem ipsum dolor sit.</span>
+                    </div>
+                    <div class="item-details">
+                        <h2>Item 3</h2>
+                        <p>Price: <span class="cart-item-price"> Rs 499.00</span>*</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="/Assets/item4.png" alt="Item 2">
+                    <div class="cart-item-info">
+                        <span>Item details</span><br>
+                        <span>Lorem ipsum dolor sit amet consectetur.</span><br>
+                        <span>Lorem ipsum dolor sit.</span>
+                    </div>
+                    <div class="item-details">
+                        <h2>Item 4</h2>
+                        <p>Price: <span class="cart-item-price"> Rs 499.00</span>*</p>
+                        <p>Quantity: 1</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <br>
+                <p>Total Items: 3</p>
+                <p>Subtotal: Rs 3495.00</p>
+                <p>Shipping: Rs 40.00</p>
+                <p><span class="cart-total-label">Total:</span><span class="cart-total-amount">Rs 3535.00</span></p>
+                <br>
+                <button class="checkout-button">Proceed to Checkout</button>
+                <div class="mandatory" style="color: gray; font-size: 1rem; margin-top: 1rem;">* GST included</div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <h1>Tech Genesis</h1>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2023 Tech Genesis. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

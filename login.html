@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Login.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <div class="logo"><a href="index.html"><b>Tech Genesis</b></a></div>
+                </div>
+                <div class="nav-search">
+                    <input class="search-input" type="text" placeholder="Search here..." />
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-signin">
+                    <a href="login.html"><span>Sign in</span></a>
+                </div>
+                <div class="nav-return">
+                    <a href=""><span>My Orders</span></a>
+                </div>
+                <div class="nav-cart">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <a href="cart.html">Cart</a>
+                </div>
+                <div class="nav-profile">
+                    <div><i class="fa-regular fa-user"></i></div>
+                    <a href="">Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="login-form">
+                <span id="element1"></span>
+                <form action="">
+                    <div class="form-group">
+                        <label for="email"><span id="element2"></span></label>
+                        <input type="email phone" id="email" name="email" placeholder="Enter E-mail or Mobile"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><span id="element3"></span></label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required />
+                    </div>
+                    <div class="form-options">
+                        <a href="#"><span id="element4"></span></a>
+                        <button class="login-btn" type="submit">Login</button>
+                    </div>
+                </form>
+                <div class="signup-link">
+                    <span id="element5"></span>
+                    <a href="signup.html"><span id="element6"></span></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>Tech Genesis</h1>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Tech Genesis. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
