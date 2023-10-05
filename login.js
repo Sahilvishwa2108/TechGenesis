@@ -1,6 +1,6 @@
 var typed = new Typed("#element1", {
     strings: ["<h2>LOGIN</h2>"],
-    typeSpeed: 10,
+    typeSpeed: 0,
     showCursor: false,
     onComplete: function () {
         var typed = new Typed("#element2", {
