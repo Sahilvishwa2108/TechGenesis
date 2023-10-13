@@ -18,6 +18,21 @@ body {
   background-color: #512B81;
   color: aliceblue;
 }
+.nav-logo a{
+  position: absolute;
+  left: 4rem;
+  top: 1rem;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: all 1s ease;
+  /* text-shadow: #FC0 1px 0 15px; */
+}
+.nav-logo a:hover{
+  transform: scale(1.1);
+}
 .nav-left{
   display: flex;
   justify-content: space-evenly;
@@ -106,8 +121,6 @@ body {
 }
 
 
-
-  
 /* Footer Styles */
 footer {
   background-color: #3B1F5A;
@@ -160,57 +173,132 @@ footer {
   color: gray;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #3B1F5A;
-  color: #fff;
-  padding: 20px 0;
-  position: relative;
-  bottom: 0;
+
+/* side-bar */
+.side-menu{
+  height: 90vh;
   width: 100vw;
 }
+.button1 i{
+  font-size: 30px;
+  font-weight: 700;
+  color: aliceblue;
+  position: absolute;
+  top: 2.5px;
+  left: 16px;
+  line-height: 60px;
+  transition: all 0.5s ease;
+}
+.button1 i:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.sidebars{
+  position: absolute;
+  left: -300px;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: rgb(81, 43, 129);
+  border-top-right-radius: 2px;
+  box-shadow: 0 0 6px rgba(255, 255, 255,0.8);
+  transition: all 0.3s linear;
+  z-index: 5;
+}
 
-.footer-container {
+.sidebars .logo{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 2px 3px rgba(255, 255, 255,0.5);
+}
+.sidebars .logo a{
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: all 1s ease;
+  /* text-shadow: #FC0 1px 0 15px; */
+}
+.sidebars .logo a:hover{
+  transform: scale(1.1);
+}
+.sidebars .menu{
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  line-height: 30px;
+}
+.sidebars .button2{
+  color: rgba(0, 255, 255,0.8);
+  font-size: 25px;
+  position: absolute;
+  left: 270px;
+  top: 20px;
+}
+.sidebars .button2 i{
+  transition: color 0.3s ease;
+}
+.sidebars .button2 i:hover{
+  color: rgb(235, 60, 60);
+  cursor: pointer;
+}
+.sidebars .menu li{
+  /* margin-top: 6px;
+  margin-bottom: 6px; */
+  padding: 14px 20px;
+  text-decoration: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
-
-.footer-logo h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.footer-links ul {
+.sidebars .menu ul {
   list-style: none;
+  padding-left: 0;
 }
 
-.footer-links ul li {
-  margin: 5px 0;
-}
-
-.footer-links ul li a {
+.sidebars .menu li a,i{
+  color: #ffffff;
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.footer-social a {
-  text-decoration: none;
-  color: #fff;
   font-size: 20px;
-  margin-right: 10px;
+  font-weight: 400;
+}
+.sidebars .menu li a{
+  transition: color 1s ease;
+}
+.sidebars .menu li a:hover{
+  color: blueviolet;
+  /* transform: scale(2); */
+}
+.sidebars .menu li i{
+  font-size: 40px;
+  position: relative;
+  top: 10px;
+  margin-bottom: 18px;
+  padding-right: 8px;
+  transition: transform 0.3s ease;
+}
+.sidebars .menu li:hover i{
+  transform: scale(1.1);
+}
+#check{
+  display: none;
+}
+.sidebars .menu li:hover{
+  box-shadow: 0 0 10px rgba(255, 255, 255,0.6);
+  border-radius: 8px;
+}
+#check:checked ~.sidebars{
+  left: 0;
+}
+#check:checked ~.button1 i{
+  display: none;
 }
 
-.footer-bottom {
-  text-align: center;
-  padding-top: 10px;
-  background-color: inherit;
-  color: gray;
-}
 
 
 /* Cart style */
